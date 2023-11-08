@@ -15,7 +15,7 @@ Implementation of a balanced binary search tree(BST) class in javascript. This i
 - An `isBalanced()` function that returns whether the tree is balanced or not
 - A `rebalance()` function that rebalances the tree
 
-### Script
+## Script
 
 The code also includes a small script that does the following:
 
