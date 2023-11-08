@@ -243,23 +243,29 @@ function generateRandomNumbersArray(length, min, max) {
 }
 
 function script() {
-  const tree = Tree(generateRandomNumbersArray(10, 0, 100));
-  tree.prettyPrint();
-  console.log(tree.isBalanced());
+  const tree = Tree(generateRandomNumbersArray(10, 0, 100)); // step 1
+  tree.prettyPrint(); // step 2
+  console.log(tree.isBalanced()); //step 3
+
+  //step 4
   console.log(tree.levelOrder());
-  console.log(tree.inOrder());
   console.log(tree.preOrder());
   console.log(tree.postOrder());
-  tree.insert(generateRandomNumber(101, 150));
-  tree.insert(generateRandomNumber(101, 150));
-  tree.insert(generateRandomNumber(101, 150));
-  tree.prettyPrint();
-  console.log(tree.isBalanced());
-  tree.rebalance();
-  tree.prettyPrint();
-  console.log(tree.isBalanced());
-  console.log(tree.levelOrder());
   console.log(tree.inOrder());
+
+  //step 5
+  tree.insert(generateRandomNumber(101, 150));
+  tree.insert(generateRandomNumber(101, 150));
+  tree.insert(generateRandomNumber(101, 150));
+
+  console.log(tree.isBalanced()); // step 6
+  tree.rebalance(); // step 7
+  console.log(tree.isBalanced()); // step 8
+
+  // step 9
+  console.log(tree.levelOrder());
   console.log(tree.preOrder());
   console.log(tree.postOrder());
+  console.log(tree.inOrder());
 }
+script();
